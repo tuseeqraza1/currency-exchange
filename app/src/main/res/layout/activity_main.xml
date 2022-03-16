@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="#ADC7C7C7"
+        android:contentDescription="@string/todo"
+        android:padding="5dp"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/bitcoin"
+        tools:srcCompat="@mipmap/bitcoin"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/bitcoinTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="@string/bitcoin_value"
+        android:inputType="numberDecimal"
+        android:autofillHints="" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/bitcoinSubmitBTN"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:onClick="submit"
+        android:text="SUBMIT" />
+
+    <com.scrounger.countrycurrencypicker.library.Buttons.CountryCurrencyButton
+        android:id="@+id/countryBTN"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        app:country_code="US"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:show_currency="true" />
+
+    <EditText
+        android:id="@+id/currencyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:hint="@string/currency_value"
+        android:inputType="numberDecimal"
+        android:autofillHints="" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/currencySubmitBTN"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:onClick="submit"
+        android:text="SUBMIT" />
+
+    <TextView
+        android:id="@+id/timeUpdateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="Updated On:"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
