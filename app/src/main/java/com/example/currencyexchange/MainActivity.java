@@ -87,21 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         try {
-                                response(v, body);
-
-//                            JSONObject jsonObject = new JSONObject(body);
-//                            JSONObject timeObject = jsonObject.getJSONObject("time");
-//                            time.setText(timeObject.getString("updated"));
-//
-//                                JSONObject bpiObject = jsonObject.getJSONObject("bpi");
-//                                JSONObject usdObject = bpiObject.getJSONObject(countryName);
-//                                float curr = (Float.parseFloat(usdObject.getString("rate_float")))
-//                                        * Float.parseFloat(String.valueOf(currencyTV.getText()));
-//
-//                                currencyTV.setText(curr+"");
-//
-
-
+                                response(v, body)
                         } catch (Exception e) {
 
                         }
